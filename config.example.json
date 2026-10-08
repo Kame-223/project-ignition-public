@@ -1,0 +1,18 @@
+{
+  "_comment": "人ごとに違う設定の例。実際の値はこのファイルに書かず、自分の config.json（git に入れない）に書く",
+  "day_start": "06:00",
+  "day_end": "22:00",
+  "task_kinds": ["school", "personal"],
+  "calendar": {
+    "write": false,
+    "accounts": {
+      "school": {"token_file": "secrets/school_token.json"},
+      "personal": {"token_file": "secrets/personal_token.json"}
+    }
+  },
+  "ai": {
+    "max_targets_per_message": 3,
+    "protected_paths": ["data/", "vault/", "secrets/"]
+  },
+  "obsidian_vault": "my-vault"
+}
